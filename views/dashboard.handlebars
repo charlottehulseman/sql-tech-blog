@@ -1,0 +1,19 @@
+{{#each blogs}}
+<div class="card">
+  <div class="card-divider">
+    <div class="card-title">
+      <a href="/api/blogs/{{id}}">{{title}}</a>
+    </div>
+    <div class="created">
+      Created on {{short createdAt}}
+    </div>
+  </div>
+  <div class="card-section">
+    {{#each Comments}}
+    <div class="card-section comment">
+      <p id="comment-info">{{username}} wrote:</p>{{body}}<p id="comment-info">on {{short createdAt}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,135 @@
+:root {
+  --darker: #432534 ;
+  --dark: #8a817c;
+  --light: #E7CFBC;
+  --lighter: #f4f3ee;
+  --mid: #e0afa0;
+}
+
+body {
+  background: var(--light);
+}
+
+header {
+  background: var(--darker);
+}
+
+#title {
+  color: var(--lighter);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+a {
+  color: var(--lighter);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light);
+
+}
+
+.delete {
+  color: var(--lighter);
+  background: rgb(203, 65, 65);
+  padding: 5px;
+  margin: 5px 10px 5px 5px;
+}
+
+.update {
+  color: var(--lighter);
+  background: var(--dark);
+  padding: 5px;
+  margin: 0;
+}
+
+.card {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.card-divider {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--darker);
+  color: var(--lighter);
+}
+
+.card-divider h4 {
+  justify-content: flex-start;
+}
+
+.card-section {
+  background: var(--lighter);
+}
+
+
+.card-title {
+  text-decoration: none;
+  color: var(--lighter);
+  cursor: pointer;
+}
+
+.created {
+  font-size: 0.8rem;
+  color: var(--light);
+  justify-self: flex-end;
+}
+
+.submit {
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--darker);
+}
+
+.submit:hover {
+  background-color: var(--darker) !important;
+  color: var(--light);
+}
+
+.comment {
+  border: 1px solid var(--darker);
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+#comment-info {
+  color: purple);
+}
+
+#signup-txt {
+  color: var(--darker);
+}
+
+#newpost, #newcomment {
+  background-color: var(--darker);
+  width: fit-content;
+  color: var(--lighter);
+}
+
+#newpost:hover {
+  color: var(--light);
+}
+
+#newcomment:hover {
+  color: var(--light);
+}

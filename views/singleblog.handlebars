@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="card-divider">
+    <div>
+      {{#if (owner UserId usernameId)}}
+      <button class="button delete">Delete</button>
+      {{/if}}
+    </div>
+    <div>
+      <h4>{{title}}</h4>
+    </div>
+    <div class="created">
+      Created by:
+      {{User.username}}
+      on
+      {{short createdAt}}
+    </div>
+  </div>
+  <div class="card-section">
+    {{body}}
+  </div>
+  <div class="card-section">
+    {{#each Comments}}
+    <div class="card-section comment">
+      {{username}}
+      wrote:
+      {{body}}
+      on
+      {{short createdAt}}
+    </div>
+    {{/each}}
+  </div>
+</div>
+<div id="commentcard" class="card hide">
+  <div class="card-divider">
+  </div>
+  <div class="card-section">
+    <form id="comment-form">
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" cols="30" rows="2"></textarea>
+      <button class="submit button">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="bottom">
+  <div>
+    {{#if username}}
+    <button id="newcomment" class="submit button">+ New Comment</button>
+    {{/if}}
+  </div>
+</div>
+
+<form id="updatepost-form" class="hide">
+  <div class="card">
+    <div class="card-divider">
+      Update Post
+    </div>
+    <div class="card-section">
+      <textarea name="title" id="post-title">{{title}}</textarea>
+      <textarea name="body" id="post-body">{{body}}</textarea>
+      <button class="submit button">Update</button>
+    </div>
+  </div>
+</form>
+
+<script src="/js/singleblog.js" defer></script>
