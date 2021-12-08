@@ -2,6 +2,7 @@
 
 ## **Links**
 -View repository [here.](https://github.com/charlottehulseman/tech-blog)
+-View deployed website [here.](https://nameless-beyond-75612.herokuapp.com/)
 
 -View deployed website [here.]()
 
