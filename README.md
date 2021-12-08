@@ -2,7 +2,7 @@
 
 ## **Links**
 -View repository [here.](https://github.com/charlottehulseman/sql-tech-blog)
--View deployed website [here.](https://nameless-beyond-75612.herokuapp.com/)
+-View deployed website [here.](https://still-hamlet-82360.herokuapp.com/)
 
 -View deployed website [here.]()
 
